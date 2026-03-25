@@ -1,0 +1,50 @@
+## 📊 Market Sentiment vs Trader Behavior — Summary
+
+### 🔍 Methodology
+
+We analyzed two datasets: Bitcoin Fear & Greed Index and Hyperliquid trader data. The trading dataset was cleaned by correcting timestamps and aggregating transactions at a daily level. Key metrics such as daily PnL, number of trades, and average trade size were computed. Both datasets were then merged on date to align trader performance with market sentiment.
+
+To evaluate behavior and performance, we grouped data by sentiment classification (Extreme Fear, Fear, Neutral, Greed, Extreme Greed). Additionally, a simple machine learning model (Random Forest) was built to predict next-day profitability using sentiment and trading features.
+
+---
+
+### 📈 Key Insights
+
+1. **Higher Profitability in Fear Phases**
+   The highest average PnL occurs during Extreme Fear and Fear periods, indicating traders benefit from increased volatility.
+
+2. **Lower Returns During Greed**
+   Greed and Extreme Greed phases show significantly lower PnL, suggesting overconfidence and weaker trade execution.
+
+3. **Behavioral Shift with Sentiment**
+   Trading activity (number of trades) increases sharply during Fear and drops during Greed, showing traders are more active in volatile markets.
+
+4. **Contrarian Pattern Observed**
+   Market sentiment acts as a contrarian indicator — fearful markets create opportunities, while greedy markets increase risk.
+
+---
+
+### 🚀 Strategy Recommendations
+
+**1. Fear-Based Trading Strategy (Aggressive Mode)**
+
+* Increase trade frequency during Fear and Extreme Fear
+* Capitalize on volatility-driven price movements
+* Slightly increase position size for short-term trades
+
+**2. Greed-Based Risk Control (Defensive Mode)**
+
+* Reduce trading activity during Greed phases
+* Lower leverage and avoid overtrading
+* Focus on capital preservation instead of aggressive gains
+
+**3. Data-Driven Decision Support**
+
+* Use sentiment as a signal for adjusting trading intensity
+* Combine sentiment with behavioral metrics for better timing
+
+---
+
+### ✅ Conclusion
+
+Market sentiment strongly influences both trader behavior and performance. Fear-driven markets offer higher profit opportunities due to volatility, while greed-driven markets increase risk and reduce returns. Incorporating sentiment-aware strategies can significantly improve trading outcomes.
